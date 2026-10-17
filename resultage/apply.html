@@ -1,0 +1,542 @@
+<title>Resultage Lead Funnel</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: two rooms. Front: one focused application card for ad traffic. Back: a pipeline board for working every lead fast. */
+:root {
+  --bg: #F2F4F8;
+  --surface: #FFFFFF;
+  --sunk: #E8ECF3;
+  --fg: #0E1A2B;
+  --muted: #566377;
+  --line: #D6DCE6;
+  --accent: #1E4BF0;
+  --accent-ink: #FFFFFF;
+  --mark: #FFC93C;
+  --mark-ink: #2A1E00;
+  --good: #137A4B;
+  --warn: #B45309;
+  --bad: #C2302B;
+  --f-display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0A111E; --surface: #111B2C; --sunk: #0D1625; --fg: #E7ECF4; --muted: #95A2B6; --line: #23314A;
+    --accent: #7090FF; --accent-ink: #07102A; --mark: #FFC93C; --mark-ink: #2A1E00;
+    --good: #4ADE80; --warn: #FBBF24; --bad: #F87171; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0A111E; --surface: #111B2C; --sunk: #0D1625; --fg: #E7ECF4; --muted: #95A2B6; --line: #23314A;
+  --accent: #7090FF; --accent-ink: #07102A; --mark: #FFC93C; --mark-ink: #2A1E00;
+  --good: #4ADE80; --warn: #FBBF24; --bad: #F87171; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 400 16px/1.55 var(--f-body); -webkit-font-smoothing: antialiased; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--f-display); margin: 0; text-wrap: balance; line-height: 1.05; }
+p { margin: 0; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.label { font: 500 0.72rem/1 var(--f-mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 20px; border-radius: 10px; font: 600 1rem/1 var(--f-body); border: 1.5px solid transparent; cursor: pointer; text-decoration: none; background: var(--accent); color: var(--accent-ink); }
+.btn:disabled { opacity: .6; cursor: progress; }
+.btn-ghost { background: transparent; color: var(--fg); border-color: var(--line); }
+.btn-sm { padding: 7px 10px; font-size: 0.82rem; border-radius: 7px; }
+
+/* Top bar */
+.bar { border-bottom: 1px solid var(--line); background: var(--bg); }
+.bar .wrap { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-block: 14px; }
+.logo { font: 900 1.2rem/1 var(--f-display); font-stretch: 125%; letter-spacing: -0.02em; display: inline-flex; align-items: center; gap: 8px; }
+.logo i { width: 11px; height: 11px; background: var(--mark); border-radius: 3px; box-shadow: 0 0 0 2px var(--fg) inset; }
+.tabs { display: inline-flex; background: var(--sunk); border: 1px solid var(--line); border-radius: 10px; padding: 3px; gap: 2px; }
+.tabs button { border: 0; background: transparent; color: var(--muted); font: 600 0.85rem/1 var(--f-body); padding: 8px 12px; border-radius: 7px; cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--surface); color: var(--fg); box-shadow: 0 1px 2px color-mix(in srgb, var(--fg) 15%, transparent); }
+
+/* ---------- Front: lead page ---------- */
+.lp { padding-block: clamp(28px, 6vw, 72px); }
+.lp .wrap { display: grid; grid-template-columns: 1fr minmax(0, 480px); gap: clamp(28px, 5vw, 72px); align-items: start; }
+.lp-copy { display: grid; gap: 22px; min-width: 0; padding-top: 8px; }
+.lp-copy h1 { font-size: clamp(2.2rem, 5.2vw, 3.9rem); font-weight: 900; font-stretch: 116%; letter-spacing: -0.02em; line-height: 0.98; }
+.lp-copy h1 mark { background: var(--mark); color: var(--mark-ink); padding: 0 .1em; border-radius: 5px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.lp-copy .lede { color: var(--muted); font-size: 1.08rem; max-width: 52ch; }
+.terms { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--line); gap: 1px; max-width: 560px; }
+.terms div { background: var(--surface); padding: 14px; display: grid; gap: 6px; }
+.terms b { font: 800 1.35rem/1 var(--f-display); font-stretch: 110%; }
+.terms span { font-size: 0.8rem; color: var(--muted); line-height: 1.3; }
+.after { display: grid; gap: 10px; max-width: 520px; }
+.after li { display: grid; grid-template-columns: 26px 1fr; gap: 10px; align-items: start; color: var(--muted); font-size: 0.95rem; }
+.after li b { color: var(--fg); font-weight: 600; }
+.after li span.n { width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--fg); display: grid; place-items: center; font: 500 0.72rem/1 var(--f-mono); color: var(--fg); margin-top: 1px; }
+.after { list-style: none; margin: 0; padding: 0; }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: clamp(20px, 3.5vw, 30px); box-shadow: 0 24px 50px -28px color-mix(in srgb, var(--fg) 35%, transparent); min-width: 0; }
+.card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 18px; }
+.card-head h2 { font-size: 1.35rem; font-stretch: 108%; }
+.progress { height: 4px; background: var(--sunk); border-radius: 4px; overflow: hidden; margin-bottom: 22px; }
+.progress i { display: block; height: 100%; background: var(--accent); width: 50%; transition: width .3s ease; }
+form { display: grid; gap: 16px; }
+.field { display: grid; gap: 6px; }
+.field label, .field legend { font-weight: 600; font-size: 0.92rem; }
+.field input, .field select, .field textarea { width: 100%; font: 400 1rem/1.3 var(--f-body); padding: 12px 13px; border: 1.5px solid var(--line); border-radius: 9px; background: var(--bg); color: var(--fg); }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--accent); }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 8px; }
+.choices { display: grid; gap: 8px; }
+.choices.two { grid-template-columns: 1fr 1fr; }
+.choice { position: relative; }
+.choice input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.choice span { display: block; padding: 11px 13px; border: 1.5px solid var(--line); border-radius: 9px; font-size: 0.95rem; background: var(--bg); }
+.choice input:checked + span { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--bg)); font-weight: 600; }
+.choice input:focus-visible + span { outline: 3px solid var(--accent); outline-offset: 2px; }
+.err { color: var(--bad); font-size: 0.85rem; min-height: 1em; }
+.fine { color: var(--muted); font-size: 0.78rem; }
+.step-actions { display: flex; gap: 10px; }
+.step-actions .btn { flex: 1; }
+
+.result { display: grid; gap: 18px; }
+.result h2 { font-size: 1.6rem; font-stretch: 112%; }
+.result p { color: var(--muted); }
+.result .badge { justify-self: start; }
+.slot-hint { display: grid; gap: 6px; padding: 14px; border-radius: 10px; background: color-mix(in srgb, var(--mark) 22%, var(--surface)); color: var(--fg); font-size: 0.92rem; }
+.badge { display: inline-flex; align-items: center; gap: 6px; font: 500 0.72rem/1 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; padding: 6px 8px; border-radius: 6px; background: var(--sunk); color: var(--muted); }
+.badge.good { background: color-mix(in srgb, var(--good) 15%, transparent); color: var(--good); }
+.badge.bad { background: color-mix(in srgb, var(--bad) 14%, transparent); color: var(--bad); }
+.badge.warn { background: color-mix(in srgb, var(--warn) 16%, transparent); color: var(--warn); }
+@media (max-width: 880px) { .lp .wrap { grid-template-columns: 1fr; } .lp-copy .after { display: none; } }
+@media (max-width: 420px) { .row2, .choices.two { grid-template-columns: 1fr; } .terms b { font-size: 1.1rem; } }
+
+/* ---------- Back: pipeline ---------- */
+.pl { padding-block: 28px 64px; }
+.pl-head { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+.pl-head h1 { font-size: clamp(1.6rem, 3.4vw, 2.3rem); font-stretch: 112%; font-weight: 800; }
+.pl-head p { color: var(--muted); font-size: 0.92rem; max-width: 60ch; margin-top: 6px; }
+.stats { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin-bottom: 18px; }
+.stats div { background: var(--surface); padding: 14px 16px; display: grid; gap: 6px; }
+.stats b { font: 800 1.6rem/1 var(--f-display); font-variant-numeric: tabular-nums; }
+.stats .alert b { color: var(--bad); }
+@media (max-width: 760px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .stats div:last-child { grid-column: span 2; } }
+.board-scroll { overflow-x: auto; padding-bottom: 8px; }
+.board { display: grid; grid-template-columns: repeat(6, minmax(220px, 1fr)); gap: 12px; min-width: 1380px; }
+.col { background: var(--sunk); border: 1px solid var(--line); border-radius: 12px; padding: 10px; display: grid; gap: 8px; align-content: start; min-height: 160px; }
+.col-head { display: flex; justify-content: space-between; align-items: center; padding: 4px 4px 6px; }
+.col-head h3 { font-size: 0.9rem; font-stretch: 105%; }
+.col-head .count { font: 500 0.75rem/1 var(--f-mono); color: var(--muted); }
+.col-empty { font-size: 0.8rem; color: var(--muted); padding: 10px 6px; }
+.lead { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px; display: grid; gap: 8px; }
+.lead.overdue { border-color: var(--bad); box-shadow: inset 3px 0 0 var(--bad); }
+.lead-top { display: flex; justify-content: space-between; gap: 8px; align-items: start; }
+.lead-top h4 { margin: 0; font: 700 0.98rem/1.2 var(--f-body); overflow-wrap: anywhere; }
+.lead-top .age { font: 400 0.72rem/1.2 var(--f-mono); color: var(--muted); white-space: nowrap; }
+.lead .meta { font-size: 0.8rem; color: var(--muted); display: grid; gap: 2px; overflow-wrap: anywhere; }
+.lead .meta button { all: unset; cursor: pointer; color: var(--fg); font-family: var(--f-mono); font-size: 0.78rem; }
+.lead .meta button:hover { text-decoration: underline; }
+.lead .meta button:focus-visible { outline: 2px solid var(--accent); }
+.next { font: 500 0.75rem/1.35 var(--f-mono); padding: 7px 8px; border-radius: 6px; background: var(--sunk); color: var(--fg); }
+.next.due { background: color-mix(in srgb, var(--bad) 14%, transparent); color: var(--bad); }
+.lead-actions { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.lead-actions select { font: 500 0.8rem/1 var(--f-body); padding: 6px; border-radius: 7px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); flex: 1; min-width: 0; }
+.dials { font: 500 0.75rem/1 var(--f-mono); color: var(--muted); }
+.empty { text-align: left; padding: 28px; border: 1.5px dashed var(--line); border-radius: 12px; display: grid; gap: 8px; margin-bottom: 18px; }
+.empty h3 { font-size: 1.1rem; }
+.empty p { color: var(--muted); font-size: 0.92rem; max-width: 64ch; }
+.cadence { margin-top: 22px; display: grid; gap: 10px; }
+.cadence ol { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.cadence li { background: var(--surface); padding: 12px 14px; font-size: 0.85rem; display: grid; gap: 4px; }
+.cadence li b { font: 500 0.75rem/1 var(--f-mono); color: var(--accent); }
+@media (max-width: 760px) { .cadence ol { grid-template-columns: 1fr 1fr; } }
+dialog { border: 1px solid var(--line); border-radius: 14px; padding: 0; background: var(--surface); color: var(--fg); width: min(520px, calc(100vw - 32px)); }
+dialog::backdrop { background: color-mix(in srgb, var(--fg) 45%, transparent); }
+dialog form { padding: 22px; }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--fg); color: var(--bg); padding: 10px 14px; border-radius: 9px; font-size: 0.88rem; z-index: 20; }
+.notice { font-size: 0.85rem; color: var(--muted); padding: 10px 12px; border-radius: 9px; background: var(--sunk); }
+</style>
+
+<header class="bar">
+  <div class="wrap">
+    <span class="logo"><i></i>Resultage</span>
+    <div class="tabs" role="tablist" id="tabs" hidden>
+      <button role="tab" id="tab-lp" aria-selected="true" aria-controls="view-lp">Lead page</button>
+      <button role="tab" id="tab-pl" aria-selected="false" aria-controls="view-pl">Pipeline</button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= FRONT: what ad traffic sees ================= -->
+<main id="view-lp" class="lp" role="tabpanel" aria-labelledby="tab-lp">
+  <div class="wrap">
+    <div class="lp-copy">
+      <span class="label">For online coaches doing $10k+/month</span>
+      <h1>Get <mark>15–30 qualified sales calls</mark> a month. Only pay for the calls.</h1>
+      <p class="lede">We build your funnel and run your ads. You get qualified calls on your calendar and pay $150 for each one. Apply below to check if you're a fit.</p>
+      <div class="terms">
+        <div><b>$500</b><span>one-time setup</span></div>
+        <div><b>$150</b><span>per qualified booked call</span></div>
+        <div><b>120</b><span>days to 15–30 calls a month</span></div>
+      </div>
+      <ol class="after" aria-label="What happens after you apply">
+        <li><span class="n">1</span><span><b>Apply in 60 seconds.</b> A few questions so we know whether we can help.</span></li>
+        <li><span class="n">2</span><span><b>Pick a time.</b> Qualified coaches book a 20-minute fit call straight away.</span></li>
+        <li><span class="n">3</span><span><b>Get your plan.</b> We map out your funnel, your ads and your target cost per call.</span></li>
+      </ol>
+    </div>
+
+    <div class="card" aria-live="polite">
+      <!-- Step 1 -->
+      <div id="step1">
+        <div class="card-head"><h2>Check if you qualify</h2><span class="label">Step 1 of 2</span></div>
+        <div class="progress"><i style="width:50%"></i></div>
+        <form id="f1" novalidate>
+          <fieldset class="field">
+            <legend>What's your coaching business doing per month?</legend>
+            <div class="choices two" id="revenue">
+              <label class="choice"><input type="radio" name="revenue" value="Under $5k"><span>Under $5k</span></label>
+              <label class="choice"><input type="radio" name="revenue" value="$5k–$10k"><span>$5k–$10k</span></label>
+              <label class="choice"><input type="radio" name="revenue" value="$10k–$25k"><span>$10k–$25k</span></label>
+              <label class="choice"><input type="radio" name="revenue" value="$25k–$50k"><span>$25k–$50k</span></label>
+              <label class="choice"><input type="radio" name="revenue" value="$50k+"><span>$50k+</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="field">
+            <legend>Do you sell your coaching on sales calls?</legend>
+            <div class="choices two">
+              <label class="choice"><input type="radio" name="salesCalls" value="Yes"><span>Yes</span></label>
+              <label class="choice"><input type="radio" name="salesCalls" value="No"><span>No</span></label>
+            </div>
+          </fieldset>
+          <p class="err" id="e1"></p>
+          <button class="btn" type="submit">Next →</button>
+        </form>
+      </div>
+
+      <!-- Step 2 -->
+      <div id="step2" hidden>
+        <div class="card-head"><h2>Where should we send your plan?</h2><span class="label">Step 2 of 2</span></div>
+        <div class="progress"><i style="width:100%"></i></div>
+        <form id="f2" novalidate>
+          <div class="row2">
+            <div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+          </div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="business">Coaching business or niche</label><input id="business" name="business" placeholder="e.g. Fitness coaching for busy dads"></div>
+          <div class="field">
+            <label for="source">How did you find us?</label>
+            <select id="source" name="source">
+              <option>From ads</option><option>From LinkedIn</option><option>From DMs</option>
+              <option>From email</option><option>From SMS</option><option>From cold calling</option>
+            </select>
+          </div>
+          <p class="err" id="e2"></p>
+          <div class="step-actions">
+            <button class="btn btn-ghost" type="button" id="back">Back</button>
+            <button class="btn" type="submit" id="submit">See if I qualify</button>
+          </div>
+          <p class="fine">We'll use these details to call, text and email you about your application. You can opt out any time.</p>
+        </form>
+      </div>
+
+      <!-- Qualified -->
+      <div id="yes" class="result" hidden>
+        <span class="badge good">Application received</span>
+        <h2>You're a fit. Book your call to lock in your spot.</h2>
+        <p>We've saved your application. Pick a time for your 20-minute fit call. We'll go through your offer and your numbers, and whether 15–30 qualified calls a month is realistic for you.</p>
+        <div class="slot-hint"><strong>Your spot isn't held until you book.</strong><span>If you don't pick a time now, someone from our team will call you shortly to book it.</span></div>
+        <a class="btn" id="calLink" href="#" target="_blank" rel="noopener">Choose a time →</a>
+        <p class="fine" id="saveNote"></p>
+      </div>
+
+      <!-- Not qualified -->
+      <div id="no" class="result" hidden>
+        <span class="badge">Application received</span>
+        <h2>Thanks for applying.</h2>
+        <p>Based on your answers, we're not sure we can help you yet. Resultage works best for coaches doing $10k+ a month who sell on sales calls. When you get there, we'd love to hear from you.</p>
+        <a class="btn btn-ghost" id="siteLink" href="#" target="_blank" rel="noopener">Learn more about Resultage</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ================= BACK: pipeline for the owner ================= -->
+<main id="view-pl" class="pl" role="tabpanel" aria-labelledby="tab-pl" hidden>
+  <div class="wrap">
+    <div class="pl-head">
+      <div>
+        <h1>Lead pipeline</h1>
+        <p>Every lead who applies lands in New. Call anyone who hasn't booked within 10 minutes, then follow the cadence below until they book.</p>
+      </div>
+      <button class="btn" id="addBtn" type="button">+ Add lead</button>
+    </div>
+    <div class="stats" id="stats">
+      <div><span class="label">Leads</span><b id="sTotal">0</b></div>
+      <div><span class="label">Qualified</span><b id="sQual">0%</b></div>
+      <div class="alert"><span class="label">Need a call now</span><b id="sDue">0</b></div>
+      <div><span class="label">Booked</span><b id="sBooked">0</b></div>
+      <div><span class="label">Closed</span><b id="sClosed">0</b></div>
+    </div>
+    <div class="empty" id="empty" hidden>
+      <h3>No leads yet</h3>
+      <p>Leads show up here as soon as someone submits the lead page. You can also add Facebook lead form leads by hand with “+ Add lead”.</p>
+    </div>
+    <p class="notice" id="plNotice" hidden></p>
+    <div class="board-scroll"><div class="board" id="board"></div></div>
+    <div class="cadence">
+      <span class="label">Follow-up cadence for leads who don't self-book</span>
+      <ol>
+        <li><b>Within 10 min</b>Call twice back to back, then text the booking link</li>
+        <li><b>+2 hours</b>Call twice</li>
+        <li><b>+6 hours</b>Call twice</li>
+        <li><b>Days 2–9</b>Call twice and text once a day until they book</li>
+      </ol>
+    </div>
+  </div>
+</main>
+
+<dialog id="addDlg">
+  <form id="addForm" method="dialog">
+    <h3 style="font-size:1.2rem;margin-bottom:14px">Add a lead</h3>
+    <div class="row2">
+      <div class="field"><label for="aName">Name</label><input id="aName" required></div>
+      <div class="field"><label for="aPhone">Phone</label><input id="aPhone" type="tel"></div>
+    </div>
+    <div class="field" style="margin-top:12px"><label for="aEmail">Email</label><input id="aEmail" type="email"></div>
+    <div class="row2" style="margin-top:12px">
+      <div class="field"><label for="aRev">Monthly revenue</label>
+        <select id="aRev"><option>Under $5k</option><option>$5k–$10k</option><option selected>$10k–$25k</option><option>$25k–$50k</option><option>$50k+</option></select></div>
+      <div class="field"><label for="aSrc">Source</label>
+        <select id="aSrc"><option>From ads</option><option>From LinkedIn</option><option>From DMs</option><option>From email</option><option>From SMS</option><option>From cold calling</option></select></div>
+    </div>
+    <div class="field" style="margin-top:12px"><label for="aBiz">Business or niche</label><input id="aBiz"></div>
+    <div class="step-actions" style="margin-top:18px">
+      <button class="btn btn-ghost" value="cancel" formnovalidate type="submit">Cancel</button>
+      <button class="btn" value="save" type="submit">Add lead</button>
+    </div>
+  </form>
+</dialog>
+
+<div class="toast" id="toast" hidden></div>
+
+<script>
+/* ---- Settings: change these when you host the page yourself ---- */
+var CONFIG = {
+  calendarUrl: "https://resultage.lovable.app",   // your Calendly / GHL booking link
+  websiteUrl:  "https://resultage.lovable.app",
+  webhookUrl:  ""                                   // optional: GoHighLevel inbound webhook or Zapier catch hook
+};
+
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var STAGES = [
+    { key: "new", name: "New" },
+    { key: "contacted", name: "Contacted" },
+    { key: "booked", name: "Booked" },
+    { key: "showed", name: "Showed" },
+    { key: "closed", name: "Closed" },
+    { key: "lost", name: "Not a fit / lost" }
+  ];
+  var QUALIFIED_REVENUE = ["$10k–$25k", "$25k–$50k", "$50k+"];
+  var db = null, user = null, myId = null, leads = [], answers = {};
+
+  $("calLink").href = CONFIG.calendarUrl;
+  $("siteLink").href = CONFIG.websiteUrl;
+
+  function toast(msg) {
+    var t = $("toast"); t.textContent = msg; t.hidden = false;
+    clearTimeout(toast._t); toast._t = setTimeout(function () { t.hidden = true; }, 2200);
+  }
+
+  /* ---------- Front: two-step application ---------- */
+  $("f1").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var rev = document.querySelector('input[name="revenue"]:checked');
+    var sc = document.querySelector('input[name="salesCalls"]:checked');
+    if (!rev || !sc) { $("e1").textContent = "Pick an answer for both questions to continue."; return; }
+    $("e1").textContent = "";
+    answers.revenue = rev.value; answers.salesCalls = sc.value;
+    $("step1").hidden = true; $("step2").hidden = false; $("name").focus();
+  });
+  $("back").addEventListener("click", function () { $("step2").hidden = true; $("step1").hidden = false; });
+
+  $("f2").addEventListener("submit", async function (e) {
+    e.preventDefault();
+    var name = $("name").value.trim(), email = $("email").value.trim(), phone = $("phone").value.trim();
+    if (!name || !phone || !/^\S+@\S+\.\S+$/.test(email)) {
+      $("e2").textContent = "Add your name, phone number and a valid email so we can reach you."; return;
+    }
+    $("e2").textContent = "";
+    var qualified = QUALIFIED_REVENUE.indexOf(answers.revenue) > -1 && answers.salesCalls === "Yes";
+    var lead = {
+      name: name, email: email, phone: phone,
+      business: $("business").value.trim(), source: $("source").value,
+      revenue: answers.revenue, salesCalls: answers.salesCalls,
+      qualified: qualified, stage: qualified ? "new" : "lost",
+      dials: 0, createdAt: Date.now()
+    };
+    $("submit").disabled = true;
+    var saved = await saveLead(lead);
+    $("submit").disabled = false;
+    $("step2").hidden = true;
+    $(qualified ? "yes" : "no").hidden = false;
+    if (!saved) console.warn("Lead was not stored: no pipeline or webhook available in this view.");
+  });
+
+  async function saveLead(lead) {
+    var ok = false;
+    if (CONFIG.webhookUrl) {
+      try {
+        var body = new URLSearchParams();
+        Object.keys(lead).forEach(function (k) { body.append(k, String(lead[k])); });
+        await fetch(CONFIG.webhookUrl, { method: "POST", mode: "no-cors", body: body, keepalive: true });
+        ok = true;
+      } catch (err) { console.warn("Webhook failed", err); }
+    }
+    if (db) {
+      try {
+        var id = (user && user.isOwner && user.isOwner()) || !myId ? newId() : myId;
+        await db.doc("leads/" + id).set(lead);
+        ok = true;
+      } catch (err) { console.warn("Lead not saved to pipeline", err); }
+    }
+    return ok;
+  }
+  function newId() { return "l-" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+
+  /* ---------- Back: pipeline ---------- */
+  function showTab(which) {
+    var pl = which === "pl";
+    $("view-lp").hidden = pl; $("view-pl").hidden = !pl;
+    $("tab-lp").setAttribute("aria-selected", String(!pl));
+    $("tab-pl").setAttribute("aria-selected", String(pl));
+    try { localStorage.setItem("resultage-tab", which); } catch (e) {}
+  }
+  $("tab-lp").addEventListener("click", function () { showTab("lp"); });
+  $("tab-pl").addEventListener("click", function () { showTab("pl"); });
+
+  function ago(ms) {
+    var m = Math.floor((Date.now() - ms) / 60000);
+    if (m < 1) return "just now";
+    if (m < 60) return m + "m ago";
+    var h = Math.floor(m / 60); if (h < 24) return h + "h ago";
+    return Math.floor(h / 24) + "d ago";
+  }
+  // Next action from the cadence, based on age and how many dials are logged.
+  function nextAction(l) {
+    if (l.stage !== "new" && l.stage !== "contacted") return null;
+    var mins = (Date.now() - l.createdAt) / 60000, d = l.dials || 0;
+    var plan = [ { at: 0, label: "Double dial + text booking link" }, { at: 120, label: "Double dial (+2h)" }, { at: 360, label: "Double dial (+6h)" } ];
+    for (var day = 2; day <= 9; day++) plan.push({ at: (day - 1) * 1440, label: "Day " + day + ": double dial + text" });
+    var step = Math.floor(d / 2);
+    if (step >= plan.length) return { label: "Cadence finished: move to lost or long-term nurture", due: false };
+    var p = plan[step], due = mins >= p.at;
+    var overdue = step === 0 && mins > 10;
+    var wait = Math.max(0, p.at - mins);
+    return { label: (due ? "Now: " : "In " + (wait < 60 ? Math.ceil(wait) + "m" : Math.ceil(wait / 60) + "h") + ": ") + p.label, due: due, overdue: overdue };
+  }
+
+  function render() {
+    var board = $("board"); board.textContent = "";
+    var total = leads.length, qual = leads.filter(function (l) { return l.qualified; }).length;
+    var due = 0;
+    STAGES.forEach(function (s) {
+      var items = leads.filter(function (l) { return (l.stage || "new") === s.key; });
+      var col = document.createElement("section"); col.className = "col"; col.setAttribute("aria-label", s.name);
+      var head = document.createElement("div"); head.className = "col-head";
+      var h = document.createElement("h3"); h.textContent = s.name;
+      var c = document.createElement("span"); c.className = "count"; c.textContent = items.length;
+      head.append(h, c); col.append(head);
+      if (!items.length) { var e = document.createElement("p"); e.className = "col-empty"; e.textContent = "No leads"; col.append(e); }
+      items.forEach(function (l) {
+        var na = nextAction(l); if (na && na.due) due++;
+        var card = document.createElement("article"); card.className = "lead" + (na && na.overdue ? " overdue" : "");
+        var top = document.createElement("div"); top.className = "lead-top";
+        var nm = document.createElement("h4"); nm.textContent = l.name || "Unnamed lead";
+        var age = document.createElement("span"); age.className = "age"; age.textContent = ago(l.createdAt || Date.now());
+        top.append(nm, age);
+        var meta = document.createElement("div"); meta.className = "meta";
+        if (l.phone) meta.append(copyBtn(l.phone));
+        if (l.email) meta.append(copyBtn(l.email));
+        var info = document.createElement("span");
+        info.textContent = [l.revenue, l.business, l.source].filter(Boolean).join(" · ");
+        meta.append(info);
+        var badge = document.createElement("span");
+        badge.className = "badge " + (l.qualified ? "good" : "bad");
+        badge.textContent = l.qualified ? "Qualified" : "Not qualified";
+        badge.style.justifySelf = "start";
+        card.append(top, badge, meta);
+        if (na) { var n = document.createElement("div"); n.className = "next" + (na.due ? " due" : ""); n.textContent = na.label; card.append(n); }
+        var act = document.createElement("div"); act.className = "lead-actions";
+        var sel = document.createElement("select"); sel.setAttribute("aria-label", "Stage for " + (l.name || "lead"));
+        STAGES.forEach(function (st) { var o = document.createElement("option"); o.value = st.key; o.textContent = st.name; if (st.key === (l.stage || "new")) o.selected = true; sel.append(o); });
+        sel.addEventListener("change", function () { update(l.id, { stage: sel.value }); });
+        var dial = document.createElement("button"); dial.className = "btn btn-ghost btn-sm"; dial.type = "button"; dial.textContent = "+ Dial";
+        dial.addEventListener("click", function () {
+          var patch = { dials: (l.dials || 0) + 1 };
+          if ((l.stage || "new") === "new") patch.stage = "contacted";
+          update(l.id, patch);
+        });
+        var dc = document.createElement("span"); dc.className = "dials"; dc.textContent = (l.dials || 0) + " dials";
+        act.append(sel, dial, dc); card.append(act);
+        col.append(card);
+      });
+      board.append(col);
+    });
+    $("sTotal").textContent = total;
+    $("sQual").textContent = total ? Math.round(qual / total * 100) + "%" : "0%";
+    $("sDue").textContent = due;
+    $("sBooked").textContent = leads.filter(function (l) { return ["booked", "showed", "closed"].indexOf(l.stage) > -1; }).length;
+    $("sClosed").textContent = leads.filter(function (l) { return l.stage === "closed"; }).length;
+    $("empty").hidden = total > 0;
+  }
+  function copyBtn(text) {
+    var b = document.createElement("button"); b.type = "button"; b.textContent = text; b.title = "Copy";
+    b.addEventListener("click", function () {
+      if (navigator.clipboard) navigator.clipboard.writeText(text).then(function () { toast("Copied " + text); }, function () { toast(text); });
+      else toast(text);
+    });
+    var wrap = document.createElement("span"); wrap.append(b); return wrap;
+  }
+  async function update(id, patch) {
+    if (!db) return;
+    try { await db.doc("leads/" + id).update(patch); }
+    catch (e) { toast("Couldn't save that change. Try again."); }
+  }
+
+  $("addBtn").addEventListener("click", function () { $("addForm").reset(); $("addDlg").showModal(); });
+  $("addDlg").addEventListener("close", async function () {
+    if ($("addDlg").returnValue !== "save" || !db) return;
+    var rev = $("aRev").value, name = $("aName").value.trim();
+    if (!name) return;
+    var lead = { name: name, phone: $("aPhone").value.trim(), email: $("aEmail").value.trim(), business: $("aBiz").value.trim(),
+      source: $("aSrc").value, revenue: rev, salesCalls: "Yes", qualified: QUALIFIED_REVENUE.indexOf(rev) > -1,
+      stage: "new", dials: 0, createdAt: Date.now() };
+    try { await db.doc("leads/" + newId()).set(lead); toast("Lead added"); }
+    catch (e) { toast("Couldn't add the lead. Try again."); }
+  });
+
+  setInterval(function () { if (!$("view-pl").hidden) render(); }, 60000);
+  render();
+
+  /* ---------- Wire up storage when the viewer can use it ---------- */
+  (async function () {
+    if (!window.claude || !window.claude.use) return;
+    try { user = await window.claude.use("user"); } catch (e) {}
+    try { db = await window.claude.use("db"); } catch (e) {}
+    if (user) { try { myId = await user.id(); } catch (e) {} }
+    var canManage = false;
+    try { canManage = !!(user && (user.isOwner() || user.canEdit())); } catch (e) {}
+    if (!canManage) return;
+    $("tabs").hidden = false;
+    var saved = null; try { saved = localStorage.getItem("resultage-tab"); } catch (e) {}
+    if (location.hash === "#pipeline" || saved === "pl") showTab("pl");
+    if (!db) { $("plNotice").hidden = false; $("plNotice").textContent = "The pipeline can't load here. Sign in to claude.ai to see your leads."; return; }
+    db.collection("leads").orderBy("createdAt", "desc").onSnapshot(function (snap) {
+      leads = snap.docs.map(function (d) { var x = Object.assign({}, d.data()); x.id = d.id; return x; });
+      render();
+    }, function () { $("plNotice").hidden = false; $("plNotice").textContent = "Leads stopped syncing. Reload the page to reconnect."; });
+  })();
+})();
+</script>
