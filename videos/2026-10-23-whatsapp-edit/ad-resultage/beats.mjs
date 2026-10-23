@@ -1,7 +1,7 @@
 // Resultage ad: edit plan for engine.mjs. Phrases are looked up in assets/cut-asr.json (medium.en).
 // Uncertain hearings (owner to confirm): "rollercoaster", "One month involves less humans being clients",
 // "Resultage" spelling, "on a pay-up results basis", "4 calls a month".
-// d02 -> x1, c03 -> x2, c04 -> x3, d06 -> x4: custom scenes in custom.mjs
+// d02 -> x1, c03 -> x2, c04 -> x3, d06 -> x4, c02 -> x5 (chef scene): custom scenes in custom.mjs
 export default ({ W, E, DUR }) => ({
   title: "Resultage ad v1",
 
@@ -37,9 +37,6 @@ export default ({ W, E, DUR }) => ({
     { id: "c01", type: "bullets", s: W("next month"), e: W("it's like"), mode: "fade",
       label: "Next month",
       items: [[W("demon"), "DELIVERING"], [W("the calendar"), "CALENDAR GOES QUIET"]] },
-    { id: "c02", type: "flow", s: W("where the chef"), e: W("and it's always"),
-      nodes: [[W("chef"), "THE CHEF"], [W("takes the orders"), "TAKES THE ORDERS"], [W("answers the call"), "ANSWERS THE CALL"]],
-      circleT: W("something"), notes: [[W("something"), "something has to give"]] },
     { id: "c05", type: "bullets", s: W("with the right"), e: W("and one business"),
       items: [[W("with the right"), "RIGHT PEOPLE"], [W("with the right", 2), "RIGHT PROBLEM"], [W("ready to talk"), "READY TO TALK"]] },
   ],
