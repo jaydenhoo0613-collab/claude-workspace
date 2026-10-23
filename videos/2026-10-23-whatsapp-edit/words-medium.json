@@ -1,0 +1,865 @@
+{
+ "text": "You are a coach doing 10K a month, your clients get your results, so why does your calendar look like a blue coaster? One month involves less humans being clients, next month your team is delivering, and the calendar goes quiet It's like a restaurant where the chef also takes the orders and answers the call Something has to go, and it's always the sales calls So I'm Jayden, founder of Resultage So we only work with online coaches, and our one job is booking you 15 -20 qualified sales calls a month money, pay off, results, basis, with the right people, with the right problem, ready to talk. And one business coach went from one call a month to seventeen.",
+ "engine": "faster-whisper",
+ "model": "medium.en",
+ "language": "en",
+ "duration": 38.126,
+ "silence_db": null,
+ "chunked": true,
+ "chunks": [
+  {
+   "start": 0.0,
+   "end": 38.126,
+   "text": "You are a coach doing 10K a month, your clients get your results, so why does your calendar look like a blue coaster? One month involves less humans being clients, next month your team is delivering, and the calendar goes quiet It's like a restaurant where the chef also takes the orders and answers the call Something has to go, and it's always the sales calls So I'm Jayden, founder of Resultage So we only work with online coaches, and our one job is booking you 15 -20 qualified sales calls a month money, pay off, results, basis, with the right people, with the right problem, ready to talk. And one business coach went from one call a month to seventeen."
+  }
+ ],
+ "words": [
+  {
+   "word": "You",
+   "text": "You",
+   "start": 0.0,
+   "end": 0.8,
+   "prob": 0.081
+  },
+  {
+   "word": "are",
+   "text": "are",
+   "start": 0.8,
+   "end": 0.9,
+   "prob": 0.59
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 0.9,
+   "end": 1.06,
+   "prob": 0.892
+  },
+  {
+   "word": "coach",
+   "text": "coach",
+   "start": 1.06,
+   "end": 1.24,
+   "prob": 0.977
+  },
+  {
+   "word": "doing",
+   "text": "doing",
+   "start": 1.24,
+   "end": 1.54,
+   "prob": 0.902
+  },
+  {
+   "word": "10K",
+   "text": "10K",
+   "start": 1.54,
+   "end": 1.94,
+   "prob": 0.589
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 1.94,
+   "end": 2.06,
+   "prob": 0.844
+  },
+  {
+   "word": "month,",
+   "text": "month,",
+   "start": 2.06,
+   "end": 2.36,
+   "prob": 0.995
+  },
+  {
+   "word": "your",
+   "text": "your",
+   "start": 2.66,
+   "end": 2.72,
+   "prob": 0.736
+  },
+  {
+   "word": "clients",
+   "text": "clients",
+   "start": 2.72,
+   "end": 2.98,
+   "prob": 0.942
+  },
+  {
+   "word": "get",
+   "text": "get",
+   "start": 2.98,
+   "end": 3.2,
+   "prob": 0.946
+  },
+  {
+   "word": "your",
+   "text": "your",
+   "start": 3.2,
+   "end": 3.36,
+   "prob": 0.271
+  },
+  {
+   "word": "results,",
+   "text": "results,",
+   "start": 3.36,
+   "end": 3.74,
+   "prob": 0.933
+  },
+  {
+   "word": "so",
+   "text": "so",
+   "start": 4.1,
+   "end": 4.24,
+   "prob": 0.907
+  },
+  {
+   "word": "why",
+   "text": "why",
+   "start": 4.24,
+   "end": 4.42,
+   "prob": 0.946
+  },
+  {
+   "word": "does",
+   "text": "does",
+   "start": 4.42,
+   "end": 4.56,
+   "prob": 0.987
+  },
+  {
+   "word": "your",
+   "text": "your",
+   "start": 4.56,
+   "end": 4.72,
+   "prob": 0.977
+  },
+  {
+   "word": "calendar",
+   "text": "calendar",
+   "start": 4.72,
+   "end": 5.0,
+   "prob": 0.999
+  },
+  {
+   "word": "look",
+   "text": "look",
+   "start": 5.0,
+   "end": 5.3,
+   "prob": 0.967
+  },
+  {
+   "word": "like",
+   "text": "like",
+   "start": 5.3,
+   "end": 5.5,
+   "prob": 0.991
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 5.5,
+   "end": 5.74,
+   "prob": 0.566
+  },
+  {
+   "word": "blue",
+   "text": "blue",
+   "start": 5.74,
+   "end": 5.76,
+   "prob": 0.171
+  },
+  {
+   "word": "coaster?",
+   "text": "coaster?",
+   "start": 5.76,
+   "end": 6.18,
+   "prob": 0.797
+  },
+  {
+   "word": "One",
+   "text": "One",
+   "start": 6.76,
+   "end": 6.92,
+   "prob": 0.725
+  },
+  {
+   "word": "month",
+   "text": "month",
+   "start": 6.92,
+   "end": 7.16,
+   "prob": 0.991
+  },
+  {
+   "word": "involves",
+   "text": "involves",
+   "start": 7.16,
+   "end": 7.56,
+   "prob": 0.324
+  },
+  {
+   "word": "less",
+   "text": "less",
+   "start": 7.56,
+   "end": 7.98,
+   "prob": 0.518
+  },
+  {
+   "word": "humans",
+   "text": "humans",
+   "start": 7.98,
+   "end": 8.34,
+   "prob": 0.053
+  },
+  {
+   "word": "being",
+   "text": "being",
+   "start": 8.34,
+   "end": 8.56,
+   "prob": 0.542
+  },
+  {
+   "word": "clients,",
+   "text": "clients,",
+   "start": 8.56,
+   "end": 8.94,
+   "prob": 0.955
+  },
+  {
+   "word": "next",
+   "text": "next",
+   "start": 9.04,
+   "end": 9.26,
+   "prob": 0.871
+  },
+  {
+   "word": "month",
+   "text": "month",
+   "start": 9.26,
+   "end": 9.56,
+   "prob": 0.996
+  },
+  {
+   "word": "your",
+   "text": "your",
+   "start": 9.56,
+   "end": 9.76,
+   "prob": 0.366
+  },
+  {
+   "word": "team",
+   "text": "team",
+   "start": 9.76,
+   "end": 9.88,
+   "prob": 0.809
+  },
+  {
+   "word": "is",
+   "text": "is",
+   "start": 9.88,
+   "end": 10.04,
+   "prob": 0.621
+  },
+  {
+   "word": "delivering,",
+   "text": "delivering,",
+   "start": 10.04,
+   "end": 10.44,
+   "prob": 0.99
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 10.76,
+   "end": 10.78,
+   "prob": 0.939
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 10.78,
+   "end": 10.94,
+   "prob": 0.924
+  },
+  {
+   "word": "calendar",
+   "text": "calendar",
+   "start": 10.94,
+   "end": 11.16,
+   "prob": 0.999
+  },
+  {
+   "word": "goes",
+   "text": "goes",
+   "start": 11.16,
+   "end": 11.46,
+   "prob": 0.942
+  },
+  {
+   "word": "quiet",
+   "text": "quiet",
+   "start": 11.46,
+   "end": 11.86,
+   "prob": 0.779
+  },
+  {
+   "word": "It's",
+   "text": "It's",
+   "start": 11.86,
+   "end": 12.52,
+   "prob": 0.494
+  },
+  {
+   "word": "like",
+   "text": "like",
+   "start": 12.52,
+   "end": 12.64,
+   "prob": 0.991
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 12.64,
+   "end": 12.8,
+   "prob": 0.929
+  },
+  {
+   "word": "restaurant",
+   "text": "restaurant",
+   "start": 12.8,
+   "end": 13.12,
+   "prob": 0.99
+  },
+  {
+   "word": "where",
+   "text": "where",
+   "start": 13.12,
+   "end": 13.46,
+   "prob": 0.712
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 13.46,
+   "end": 13.7,
+   "prob": 0.96
+  },
+  {
+   "word": "chef",
+   "text": "chef",
+   "start": 13.7,
+   "end": 13.9,
+   "prob": 0.929
+  },
+  {
+   "word": "also",
+   "text": "also",
+   "start": 13.9,
+   "end": 14.28,
+   "prob": 0.955
+  },
+  {
+   "word": "takes",
+   "text": "takes",
+   "start": 14.28,
+   "end": 14.46,
+   "prob": 0.984
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 14.46,
+   "end": 14.7,
+   "prob": 0.874
+  },
+  {
+   "word": "orders",
+   "text": "orders",
+   "start": 14.7,
+   "end": 14.88,
+   "prob": 0.959
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 14.88,
+   "end": 15.16,
+   "prob": 0.951
+  },
+  {
+   "word": "answers",
+   "text": "answers",
+   "start": 15.16,
+   "end": 15.48,
+   "prob": 0.202
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 15.48,
+   "end": 15.78,
+   "prob": 0.072
+  },
+  {
+   "word": "call",
+   "text": "call",
+   "start": 15.78,
+   "end": 16.04,
+   "prob": 0.143
+  },
+  {
+   "word": "Something",
+   "text": "Something",
+   "start": 16.04,
+   "end": 16.72,
+   "prob": 0.22
+  },
+  {
+   "word": "has",
+   "text": "has",
+   "start": 16.72,
+   "end": 17.04,
+   "prob": 0.889
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 17.04,
+   "end": 17.24,
+   "prob": 0.994
+  },
+  {
+   "word": "go,",
+   "text": "go,",
+   "start": 17.24,
+   "end": 17.4,
+   "prob": 0.899
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 17.68,
+   "end": 17.86,
+   "prob": 0.98
+  },
+  {
+   "word": "it's",
+   "text": "it's",
+   "start": 17.86,
+   "end": 18.08,
+   "prob": 0.944
+  },
+  {
+   "word": "always",
+   "text": "always",
+   "start": 18.08,
+   "end": 18.34,
+   "prob": 0.969
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 18.34,
+   "end": 18.58,
+   "prob": 0.928
+  },
+  {
+   "word": "sales",
+   "text": "sales",
+   "start": 18.58,
+   "end": 18.74,
+   "prob": 0.996
+  },
+  {
+   "word": "calls",
+   "text": "calls",
+   "start": 18.74,
+   "end": 19.12,
+   "prob": 0.398
+  },
+  {
+   "word": "So",
+   "text": "So",
+   "start": 19.12,
+   "end": 19.94,
+   "prob": 0.534
+  },
+  {
+   "word": "I'm",
+   "text": "I'm",
+   "start": 19.94,
+   "end": 20.44,
+   "prob": 0.394
+  },
+  {
+   "word": "Jayden,",
+   "text": "Jayden,",
+   "start": 20.44,
+   "end": 20.78,
+   "prob": 0.844
+  },
+  {
+   "word": "founder",
+   "text": "founder",
+   "start": 20.96,
+   "end": 21.1,
+   "prob": 0.984
+  },
+  {
+   "word": "of",
+   "text": "of",
+   "start": 21.1,
+   "end": 21.34,
+   "prob": 0.991
+  },
+  {
+   "word": "Resultage",
+   "text": "Resultage",
+   "start": 21.34,
+   "end": 21.96,
+   "prob": 0.523
+  },
+  {
+   "word": "So",
+   "text": "So",
+   "start": 21.96,
+   "end": 22.42,
+   "prob": 0.337
+  },
+  {
+   "word": "we",
+   "text": "we",
+   "start": 22.42,
+   "end": 22.64,
+   "prob": 0.954
+  },
+  {
+   "word": "only",
+   "text": "only",
+   "start": 22.64,
+   "end": 22.88,
+   "prob": 0.889
+  },
+  {
+   "word": "work",
+   "text": "work",
+   "start": 22.88,
+   "end": 23.06,
+   "prob": 0.994
+  },
+  {
+   "word": "with",
+   "text": "with",
+   "start": 23.06,
+   "end": 23.28,
+   "prob": 0.988
+  },
+  {
+   "word": "online",
+   "text": "online",
+   "start": 23.28,
+   "end": 23.52,
+   "prob": 0.972
+  },
+  {
+   "word": "coaches,",
+   "text": "coaches,",
+   "start": 23.52,
+   "end": 23.98,
+   "prob": 0.994
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 24.32,
+   "end": 24.44,
+   "prob": 0.983
+  },
+  {
+   "word": "our",
+   "text": "our",
+   "start": 24.44,
+   "end": 24.64,
+   "prob": 0.989
+  },
+  {
+   "word": "one",
+   "text": "one",
+   "start": 24.64,
+   "end": 24.88,
+   "prob": 0.832
+  },
+  {
+   "word": "job",
+   "text": "job",
+   "start": 24.88,
+   "end": 25.16,
+   "prob": 0.969
+  },
+  {
+   "word": "is",
+   "text": "is",
+   "start": 25.16,
+   "end": 25.44,
+   "prob": 0.993
+  },
+  {
+   "word": "booking",
+   "text": "booking",
+   "start": 25.44,
+   "end": 25.66,
+   "prob": 0.788
+  },
+  {
+   "word": "you",
+   "text": "you",
+   "start": 25.66,
+   "end": 25.9,
+   "prob": 0.874
+  },
+  {
+   "word": "15",
+   "text": "15",
+   "start": 25.9,
+   "end": 26.26,
+   "prob": 0.426
+  },
+  {
+   "word": "-20",
+   "text": "-20",
+   "start": 26.26,
+   "end": 26.68,
+   "prob": 0.798
+  },
+  {
+   "word": "qualified",
+   "text": "qualified",
+   "start": 26.68,
+   "end": 27.26,
+   "prob": 0.917
+  },
+  {
+   "word": "sales",
+   "text": "sales",
+   "start": 27.26,
+   "end": 27.56,
+   "prob": 0.932
+  },
+  {
+   "word": "calls",
+   "text": "calls",
+   "start": 27.56,
+   "end": 27.94,
+   "prob": 0.986
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 27.94,
+   "end": 28.36,
+   "prob": 0.889
+  },
+  {
+   "word": "month",
+   "text": "month",
+   "start": 28.36,
+   "end": 28.58,
+   "prob": 0.992
+  },
+  {
+   "word": "money,",
+   "text": "money,",
+   "start": 28.58,
+   "end": 29.2,
+   "prob": 0.353
+  },
+  {
+   "word": "pay",
+   "text": "pay",
+   "start": 29.56,
+   "end": 29.7,
+   "prob": 0.718
+  },
+  {
+   "word": "off,",
+   "text": "off,",
+   "start": 29.7,
+   "end": 29.9,
+   "prob": 0.642
+  },
+  {
+   "word": "results,",
+   "text": "results,",
+   "start": 30.0,
+   "end": 30.3,
+   "prob": 0.908
+  },
+  {
+   "word": "basis,",
+   "text": "basis,",
+   "start": 30.5,
+   "end": 30.86,
+   "prob": 0.641
+  },
+  {
+   "word": "with",
+   "text": "with",
+   "start": 31.2,
+   "end": 31.3,
+   "prob": 0.965
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 31.3,
+   "end": 31.42,
+   "prob": 0.995
+  },
+  {
+   "word": "right",
+   "text": "right",
+   "start": 31.42,
+   "end": 31.56,
+   "prob": 0.998
+  },
+  {
+   "word": "people,",
+   "text": "people,",
+   "start": 31.56,
+   "end": 31.96,
+   "prob": 0.997
+  },
+  {
+   "word": "with",
+   "text": "with",
+   "start": 32.38,
+   "end": 32.48,
+   "prob": 0.917
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 32.48,
+   "end": 32.58,
+   "prob": 0.997
+  },
+  {
+   "word": "right",
+   "text": "right",
+   "start": 32.58,
+   "end": 32.72,
+   "prob": 0.999
+  },
+  {
+   "word": "problem,",
+   "text": "problem,",
+   "start": 32.72,
+   "end": 33.1,
+   "prob": 0.768
+  },
+  {
+   "word": "ready",
+   "text": "ready",
+   "start": 33.3,
+   "end": 33.46,
+   "prob": 0.978
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 33.46,
+   "end": 33.66,
+   "prob": 0.997
+  },
+  {
+   "word": "talk.",
+   "text": "talk.",
+   "start": 33.66,
+   "end": 33.94,
+   "prob": 0.985
+  },
+  {
+   "word": "And",
+   "text": "And",
+   "start": 34.46,
+   "end": 34.74,
+   "prob": 0.859
+  },
+  {
+   "word": "one",
+   "text": "one",
+   "start": 34.74,
+   "end": 35.02,
+   "prob": 0.764
+  },
+  {
+   "word": "business",
+   "text": "business",
+   "start": 35.02,
+   "end": 35.34,
+   "prob": 0.989
+  },
+  {
+   "word": "coach",
+   "text": "coach",
+   "start": 35.34,
+   "end": 35.66,
+   "prob": 0.991
+  },
+  {
+   "word": "went",
+   "text": "went",
+   "start": 35.66,
+   "end": 35.88,
+   "prob": 0.908
+  },
+  {
+   "word": "from",
+   "text": "from",
+   "start": 35.88,
+   "end": 36.1,
+   "prob": 0.942
+  },
+  {
+   "word": "one",
+   "text": "one",
+   "start": 36.1,
+   "end": 36.36,
+   "prob": 0.415
+  },
+  {
+   "word": "call",
+   "text": "call",
+   "start": 36.36,
+   "end": 36.68,
+   "prob": 0.356
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 36.68,
+   "end": 36.84,
+   "prob": 0.906
+  },
+  {
+   "word": "month",
+   "text": "month",
+   "start": 36.84,
+   "end": 37.14,
+   "prob": 0.998
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 37.14,
+   "end": 37.52,
+   "prob": 0.891
+  },
+  {
+   "word": "seventeen.",
+   "text": "seventeen.",
+   "start": 37.52,
+   "end": 37.9,
+   "prob": 0.349
+  }
+ ]
+}

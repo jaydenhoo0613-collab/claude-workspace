@@ -2,20 +2,14 @@
  "source": "/home/user/claude-workspace/videos/2026-10-23-whatsapp-edit/raw.mp4",
  "source_duration": 38.116,
  "fps": 30.0,
- "duration": 37.633,
+ "duration": 38.1,
  "keep_ranges": [
   {
-   "start": 0.4667,
+   "start": 0.0,
    "end": 38.1,
-   "start_frame": 14,
+   "start_frame": 0,
    "end_frame": 1143
   }
  ],
- "removed": [
-  {
-   "start": 0.0,
-   "end": 0.48,
-   "reason": "dead air before the first word"
-  }
- ]
+ "removed": []
 }

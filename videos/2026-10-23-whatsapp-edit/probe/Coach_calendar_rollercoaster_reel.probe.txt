@@ -1,0 +1,21 @@
+file: Coach calendar rollercoaster reel.mp4
+codec_name=h264
+width=1080
+height=1920
+r_frame_rate=30/1
+codec_name=aac
+sample_rate=48000
+channels=2
+duration_s=38.100000
+--- loudness (EBU R128). Organic reels sit around -19 to -20 LUFS integrated, true peak under -1 dBTP ---
+    I:         -19.0 LUFS
+    LRA:         2.2 LU
+    Peak:       -1.6 dBFS
+--- faststart (moov before mdat means it streams while loading) ---
+faststart: yes
+--- letterbox / picture area (cropdetect on 3 samples) ---
+      3 crop=1080:1920:0:0
+--- brightness profile (mean luma per 60 px band, top to bottom). A split-screen shows the jump at the split line ---
+size 1080 1920
+profile: [171, 168, 168, 175, 185, 190, 190, 187, 183, 173, 160, 128, 131, 141, 151, 150, 138, 123, 105, 100, 102, 120, 116, 118, 120, 125, 119, 98, 88, 82, 73, 80]
+brightness jumps (y, from, to): []
