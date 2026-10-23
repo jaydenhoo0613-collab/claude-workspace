@@ -1,0 +1,3 @@
+{ "camA": "source/front.mov", "camB": "", "mic": "", "micOffset": 0.0, "cropA": 0.5, "cropB": 0.5, "lift": 64,
+  "segments": [[0.0, 38.1, "whole take; continuous speech, no pauses or retakes"]],
+  "removed": [] }
