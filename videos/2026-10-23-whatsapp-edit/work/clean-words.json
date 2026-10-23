@@ -1,0 +1,572 @@
+{
+ "words": [
+  {
+   "word": "when",
+   "text": "when",
+   "start": 0.193,
+   "end": 0.43,
+   "source_start": 0.66
+  },
+  {
+   "word": "it",
+   "text": "it",
+   "start": 0.43,
+   "end": 0.493,
+   "source_start": 0.897
+  },
+  {
+   "word": "comes",
+   "text": "comes",
+   "start": 0.493,
+   "end": 0.823,
+   "source_start": 0.96
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 0.823,
+   "end": 0.988,
+   "source_start": 1.29
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 1.003,
+   "end": 1.123,
+   "source_start": 1.47
+  },
+  {
+   "word": "ten",
+   "text": "ten",
+   "start": 1.123,
+   "end": 1.333,
+   "source_start": 1.59
+  },
+  {
+   "word": "can",
+   "text": "can",
+   "start": 1.333,
+   "end": 1.543,
+   "source_start": 1.8
+  },
+  {
+   "word": "apply",
+   "text": "apply",
+   "start": 2.143,
+   "end": 2.503,
+   "source_start": 2.61
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 2.503,
+   "end": 2.593,
+   "source_start": 2.97
+  },
+  {
+   "word": "get",
+   "text": "get",
+   "start": 2.593,
+   "end": 2.761,
+   "source_start": 3.06
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 2.773,
+   "end": 2.833,
+   "source_start": 3.24
+  },
+  {
+   "word": "results",
+   "text": "results",
+   "start": 2.871,
+   "end": 3.403,
+   "source_start": 3.338
+  },
+  {
+   "word": "from",
+   "text": "from",
+   "start": 3.403,
+   "end": 3.583,
+   "source_start": 3.87
+  },
+  {
+   "word": "some",
+   "text": "some",
+   "start": 3.583,
+   "end": 3.785,
+   "source_start": 4.05
+  },
+  {
+   "word": "why",
+   "text": "why",
+   "start": 3.785,
+   "end": 3.913,
+   "source_start": 4.252
+  },
+  {
+   "word": "this",
+   "text": "this",
+   "start": 3.926,
+   "end": 4.123,
+   "source_start": 4.393
+  },
+  {
+   "word": "economy",
+   "text": "economy",
+   "start": 4.123,
+   "end": 4.603,
+   "source_start": 4.59
+  },
+  {
+   "word": "most",
+   "text": "most",
+   "start": 6.973,
+   "end": 7.27,
+   "source_start": 7.44
+  },
+  {
+   "word": "as",
+   "text": "as",
+   "start": 7.273,
+   "end": 7.513,
+   "source_start": 7.74
+  },
+  {
+   "word": "next",
+   "text": "next",
+   "start": 8.563,
+   "end": 8.803,
+   "source_start": 9.03
+  },
+  {
+   "word": "month",
+   "text": "month",
+   "start": 8.803,
+   "end": 9.103,
+   "source_start": 9.27
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 12.133,
+   "end": 12.223,
+   "source_start": 12.6
+  },
+  {
+   "word": "best",
+   "text": "best",
+   "start": 12.223,
+   "end": 12.493,
+   "source_start": 12.69
+  },
+  {
+   "word": "shot",
+   "text": "shot",
+   "start": 13.064,
+   "end": 13.483,
+   "source_start": 13.531
+  },
+  {
+   "word": "was",
+   "text": "was",
+   "start": 13.496,
+   "end": 13.744,
+   "source_start": 13.963
+  },
+  {
+   "word": "it's",
+   "text": "it's",
+   "start": 17.413,
+   "end": 17.563,
+   "source_start": 17.88
+  },
+  {
+   "word": "always",
+   "text": "always",
+   "start": 17.563,
+   "end": 17.923,
+   "source_start": 18.03
+  },
+  {
+   "word": "this",
+   "text": "this",
+   "start": 17.923,
+   "end": 18.133,
+   "source_start": 18.39
+  },
+  {
+   "word": "is",
+   "text": "is",
+   "start": 18.133,
+   "end": 18.343,
+   "source_start": 18.6
+  },
+  {
+   "word": "awesome",
+   "text": "awesome",
+   "start": 18.403,
+   "end": 18.853,
+   "source_start": 18.87
+  },
+  {
+   "word": "so",
+   "text": "so",
+   "start": 19.213,
+   "end": 19.498,
+   "source_start": 19.68
+  },
+  {
+   "word": "could",
+   "text": "could",
+   "start": 19.573,
+   "end": 19.693,
+   "source_start": 20.04
+  },
+  {
+   "word": "have",
+   "text": "have",
+   "start": 19.693,
+   "end": 19.873,
+   "source_start": 20.16
+  },
+  {
+   "word": "killed",
+   "text": "killed",
+   "start": 19.873,
+   "end": 20.203,
+   "source_start": 20.34
+  },
+  {
+   "word": "in",
+   "text": "in",
+   "start": 20.205,
+   "end": 20.323,
+   "source_start": 20.672
+  },
+  {
+   "word": "front",
+   "text": "front",
+   "start": 20.323,
+   "end": 20.623,
+   "source_start": 20.79
+  },
+  {
+   "word": "of",
+   "text": "of",
+   "start": 20.623,
+   "end": 20.833,
+   "source_start": 21.09
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 20.833,
+   "end": 20.953,
+   "source_start": 21.3
+  },
+  {
+   "word": "songs",
+   "text": "songs",
+   "start": 20.953,
+   "end": 21.315,
+   "source_start": 21.42
+  },
+  {
+   "word": "in",
+   "text": "in",
+   "start": 21.315,
+   "end": 21.433,
+   "source_start": 21.782
+  },
+  {
+   "word": "japan",
+   "text": "japan",
+   "start": 21.44,
+   "end": 21.763,
+   "source_start": 21.907
+  },
+  {
+   "word": "so",
+   "text": "so",
+   "start": 21.763,
+   "end": 21.973,
+   "source_start": 22.23
+  },
+  {
+   "word": "quickly",
+   "text": "quickly",
+   "start": 22.423,
+   "end": 22.723,
+   "source_start": 22.89
+  },
+  {
+   "word": "on",
+   "text": "on",
+   "start": 22.813,
+   "end": 22.963,
+   "source_start": 23.28
+  },
+  {
+   "word": "i",
+   "text": "i",
+   "start": 22.963,
+   "end": 23.083,
+   "source_start": 23.43
+  },
+  {
+   "word": "just",
+   "text": "just",
+   "start": 23.323,
+   "end": 23.653,
+   "source_start": 23.79
+  },
+  {
+   "word": "one",
+   "text": "one",
+   "start": 24.193,
+   "end": 24.463,
+   "source_start": 24.66
+  },
+  {
+   "word": "job",
+   "text": "job",
+   "start": 24.463,
+   "end": 24.733,
+   "source_start": 24.93
+  },
+  {
+   "word": "is",
+   "text": "is",
+   "start": 24.763,
+   "end": 24.942,
+   "source_start": 25.23
+  },
+  {
+   "word": "voting",
+   "text": "voting",
+   "start": 24.943,
+   "end": 25.307,
+   "source_start": 25.41
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 25.307,
+   "end": 25.421,
+   "source_start": 25.774
+  },
+  {
+   "word": "fifteen",
+   "text": "fifteen",
+   "start": 25.422,
+   "end": 25.813,
+   "source_start": 25.889
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 25.813,
+   "end": 25.933,
+   "source_start": 26.28
+  },
+  {
+   "word": "twenty",
+   "text": "twenty",
+   "start": 25.933,
+   "end": 26.323,
+   "source_start": 26.4
+  },
+  {
+   "word": "qualified",
+   "text": "qualified",
+   "start": 26.323,
+   "end": 26.863,
+   "source_start": 26.79
+  },
+  {
+   "word": "source",
+   "text": "source",
+   "start": 26.863,
+   "end": 27.133,
+   "source_start": 27.33
+  },
+  {
+   "word": "cause",
+   "text": "cause",
+   "start": 27.179,
+   "end": 27.553,
+   "source_start": 27.646
+  },
+  {
+   "word": "lot",
+   "text": "lot",
+   "start": 27.853,
+   "end": 28.06,
+   "source_start": 28.32
+  },
+  {
+   "word": "of",
+   "text": "of",
+   "start": 28.06,
+   "end": 28.139,
+   "source_start": 28.527
+  },
+  {
+   "word": "money",
+   "text": "money",
+   "start": 28.393,
+   "end": 28.774,
+   "source_start": 28.86
+  },
+  {
+   "word": "result",
+   "text": "result",
+   "start": 29.533,
+   "end": 29.833,
+   "source_start": 30.0
+  },
+  {
+   "word": "is",
+   "text": "is",
+   "start": 29.833,
+   "end": 29.923,
+   "source_start": 30.3
+  },
+  {
+   "word": "basis",
+   "text": "basis",
+   "start": 29.923,
+   "end": 30.493,
+   "source_start": 30.39
+  },
+  {
+   "word": "with",
+   "text": "with",
+   "start": 30.698,
+   "end": 30.88,
+   "source_start": 31.165
+  },
+  {
+   "word": "like",
+   "text": "like",
+   "start": 30.88,
+   "end": 31.154,
+   "source_start": 31.347
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 31.154,
+   "end": 31.194,
+   "source_start": 31.621
+  },
+  {
+   "word": "simple",
+   "text": "simple",
+   "start": 31.183,
+   "end": 31.573,
+   "source_start": 31.65
+  },
+  {
+   "word": "i'm",
+   "text": "i'm",
+   "start": 32.413,
+   "end": 32.654,
+   "source_start": 32.88
+  },
+  {
+   "word": "ready",
+   "text": "ready",
+   "start": 32.803,
+   "end": 33.043,
+   "source_start": 33.27
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 33.043,
+   "end": 33.163,
+   "source_start": 33.51
+  },
+  {
+   "word": "talk",
+   "text": "talk",
+   "start": 33.163,
+   "end": 33.493,
+   "source_start": 33.63
+  },
+  {
+   "word": "what",
+   "text": "what",
+   "start": 34.363,
+   "end": 34.603,
+   "source_start": 34.83
+  },
+  {
+   "word": "does",
+   "text": "does",
+   "start": 34.603,
+   "end": 34.754,
+   "source_start": 35.07
+  },
+  {
+   "word": "this",
+   "text": "this",
+   "start": 34.754,
+   "end": 34.909,
+   "source_start": 35.221
+  },
+  {
+   "word": "coach",
+   "text": "coach",
+   "start": 34.963,
+   "end": 35.233,
+   "source_start": 35.43
+  },
+  {
+   "word": "my",
+   "text": "my",
+   "start": 35.246,
+   "end": 35.413,
+   "source_start": 35.713
+  },
+  {
+   "word": "phone",
+   "text": "phone",
+   "start": 35.427,
+   "end": 35.647,
+   "source_start": 35.894
+  },
+  {
+   "word": "calls",
+   "text": "calls",
+   "start": 36.011,
+   "end": 36.309,
+   "source_start": 36.478
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 36.913,
+   "end": 37.003,
+   "source_start": 37.38
+  },
+  {
+   "word": "started",
+   "text": "started",
+   "start": 37.003,
+   "end": 37.333,
+   "source_start": 37.47
+  },
+  {
+   "word": "singing",
+   "text": "singing",
+   "start": 37.333,
+   "end": 37.603,
+   "source_start": 37.8
+  }
+ ],
+ "duration": 37.633
+}

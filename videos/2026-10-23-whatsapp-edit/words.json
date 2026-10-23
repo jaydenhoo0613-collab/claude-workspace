@@ -1,0 +1,621 @@
+{
+ "text": "when it comes to and ten can apply to get the results from some why this economy most as next month the best shot was it's always this is awesome so could have killed in front of the songs in japan so quickly on i just one job is voting and fifteen to twenty qualified source cause lot of money result is basis with like a simple i'm ready to talk what does this coach my phone calls to started singing",
+ "engine": "vosk",
+ "model": "vosk-model-small-en-us-0.15",
+ "chunks": [
+  {
+   "start": 0.66,
+   "end": 5.07,
+   "text": "when it comes to and ten can apply to get the results from some why this economy"
+  },
+  {
+   "start": 7.44,
+   "end": 9.57,
+   "text": "most as next month"
+  },
+  {
+   "start": 12.6,
+   "end": 14.211,
+   "text": "the best shot was"
+  },
+  {
+   "start": 17.88,
+   "end": 19.32,
+   "text": "it's always this is awesome"
+  },
+  {
+   "start": 19.68,
+   "end": 23.19,
+   "text": "so could have killed in front of the songs in japan so quickly"
+  },
+  {
+   "start": 23.28,
+   "end": 29.241,
+   "text": "on i just one job is voting and fifteen to twenty qualified source cause lot of money"
+  },
+  {
+   "start": 30.0,
+   "end": 32.04,
+   "text": "result is basis with like a simple"
+  },
+  {
+   "start": 32.88,
+   "end": 33.96,
+   "text": "i'm ready to talk"
+  },
+  {
+   "start": 34.83,
+   "end": 38.07,
+   "text": "what does this coach my phone calls to started singing"
+  }
+ ],
+ "words": [
+  {
+   "word": " when",
+   "text": "when",
+   "start": 0.66,
+   "end": 0.897,
+   "prob": 0.454
+  },
+  {
+   "word": " it",
+   "text": "it",
+   "start": 0.897,
+   "end": 0.96,
+   "prob": 1.0
+  },
+  {
+   "word": " comes",
+   "text": "comes",
+   "start": 0.96,
+   "end": 1.29,
+   "prob": 1.0
+  },
+  {
+   "word": " to",
+   "text": "to",
+   "start": 1.29,
+   "end": 1.455,
+   "prob": 1.0
+  },
+  {
+   "word": " and",
+   "text": "and",
+   "start": 1.47,
+   "end": 1.59,
+   "prob": 0.457
+  },
+  {
+   "word": " ten",
+   "text": "ten",
+   "start": 1.59,
+   "end": 1.8,
+   "prob": 0.864
+  },
+  {
+   "word": " can",
+   "text": "can",
+   "start": 1.8,
+   "end": 2.01,
+   "prob": 0.935
+  },
+  {
+   "word": " apply",
+   "text": "apply",
+   "start": 2.61,
+   "end": 2.97,
+   "prob": 0.626
+  },
+  {
+   "word": " to",
+   "text": "to",
+   "start": 2.97,
+   "end": 3.06,
+   "prob": 0.626
+  },
+  {
+   "word": " get",
+   "text": "get",
+   "start": 3.06,
+   "end": 3.228,
+   "prob": 1.0
+  },
+  {
+   "word": " the",
+   "text": "the",
+   "start": 3.24,
+   "end": 3.3,
+   "prob": 0.584
+  },
+  {
+   "word": " results",
+   "text": "results",
+   "start": 3.338,
+   "end": 3.87,
+   "prob": 0.986
+  },
+  {
+   "word": " from",
+   "text": "from",
+   "start": 3.87,
+   "end": 4.05,
+   "prob": 0.428
+  },
+  {
+   "word": " some",
+   "text": "some",
+   "start": 4.05,
+   "end": 4.252,
+   "prob": 0.611
+  },
+  {
+   "word": " why",
+   "text": "why",
+   "start": 4.252,
+   "end": 4.38,
+   "prob": 0.452
+  },
+  {
+   "word": " this",
+   "text": "this",
+   "start": 4.393,
+   "end": 4.59,
+   "prob": 0.592
+  },
+  {
+   "word": " economy",
+   "text": "economy",
+   "start": 4.59,
+   "end": 5.07,
+   "prob": 0.997
+  },
+  {
+   "word": " most",
+   "text": "most",
+   "start": 7.44,
+   "end": 7.737,
+   "prob": 0.639
+  },
+  {
+   "word": " as",
+   "text": "as",
+   "start": 7.74,
+   "end": 7.98,
+   "prob": 0.473
+  },
+  {
+   "word": " next",
+   "text": "next",
+   "start": 9.03,
+   "end": 9.27,
+   "prob": 1.0
+  },
+  {
+   "word": " month",
+   "text": "month",
+   "start": 9.27,
+   "end": 9.57,
+   "prob": 1.0
+  },
+  {
+   "word": " the",
+   "text": "the",
+   "start": 12.6,
+   "end": 12.69,
+   "prob": 0.565
+  },
+  {
+   "word": " best",
+   "text": "best",
+   "start": 12.69,
+   "end": 12.96,
+   "prob": 0.565
+  },
+  {
+   "word": " shot",
+   "text": "shot",
+   "start": 13.531,
+   "end": 13.95,
+   "prob": 0.585
+  },
+  {
+   "word": " was",
+   "text": "was",
+   "start": 13.963,
+   "end": 14.211,
+   "prob": 0.339
+  },
+  {
+   "word": " it's",
+   "text": "it's",
+   "start": 17.88,
+   "end": 18.03,
+   "prob": 1.0
+  },
+  {
+   "word": " always",
+   "text": "always",
+   "start": 18.03,
+   "end": 18.39,
+   "prob": 1.0
+  },
+  {
+   "word": " this",
+   "text": "this",
+   "start": 18.39,
+   "end": 18.6,
+   "prob": 1.0
+  },
+  {
+   "word": " is",
+   "text": "is",
+   "start": 18.6,
+   "end": 18.81,
+   "prob": 0.91
+  },
+  {
+   "word": " awesome",
+   "text": "awesome",
+   "start": 18.87,
+   "end": 19.32,
+   "prob": 0.91
+  },
+  {
+   "word": " so",
+   "text": "so",
+   "start": 19.68,
+   "end": 19.965,
+   "prob": 1.0
+  },
+  {
+   "word": " could",
+   "text": "could",
+   "start": 20.04,
+   "end": 20.16,
+   "prob": 0.593
+  },
+  {
+   "word": " have",
+   "text": "have",
+   "start": 20.16,
+   "end": 20.34,
+   "prob": 0.593
+  },
+  {
+   "word": " killed",
+   "text": "killed",
+   "start": 20.34,
+   "end": 20.67,
+   "prob": 0.652
+  },
+  {
+   "word": " in",
+   "text": "in",
+   "start": 20.672,
+   "end": 20.79,
+   "prob": 1.0
+  },
+  {
+   "word": " front",
+   "text": "front",
+   "start": 20.79,
+   "end": 21.09,
+   "prob": 1.0
+  },
+  {
+   "word": " of",
+   "text": "of",
+   "start": 21.09,
+   "end": 21.3,
+   "prob": 1.0
+  },
+  {
+   "word": " the",
+   "text": "the",
+   "start": 21.3,
+   "end": 21.42,
+   "prob": 1.0
+  },
+  {
+   "word": " songs",
+   "text": "songs",
+   "start": 21.42,
+   "end": 21.782,
+   "prob": 1.0
+  },
+  {
+   "word": " in",
+   "text": "in",
+   "start": 21.782,
+   "end": 21.9,
+   "prob": 0.6
+  },
+  {
+   "word": " japan",
+   "text": "japan",
+   "start": 21.907,
+   "end": 22.23,
+   "prob": 0.779
+  },
+  {
+   "word": " so",
+   "text": "so",
+   "start": 22.23,
+   "end": 22.44,
+   "prob": 0.895
+  },
+  {
+   "word": " quickly",
+   "text": "quickly",
+   "start": 22.89,
+   "end": 23.19,
+   "prob": 0.712
+  },
+  {
+   "word": " on",
+   "text": "on",
+   "start": 23.28,
+   "end": 23.43,
+   "prob": 0.537
+  },
+  {
+   "word": " i",
+   "text": "i",
+   "start": 23.43,
+   "end": 23.55,
+   "prob": 0.391
+  },
+  {
+   "word": " just",
+   "text": "just",
+   "start": 23.79,
+   "end": 24.12,
+   "prob": 0.373
+  },
+  {
+   "word": " one",
+   "text": "one",
+   "start": 24.66,
+   "end": 24.93,
+   "prob": 0.975
+  },
+  {
+   "word": " job",
+   "text": "job",
+   "start": 24.93,
+   "end": 25.2,
+   "prob": 0.534
+  },
+  {
+   "word": " is",
+   "text": "is",
+   "start": 25.23,
+   "end": 25.409,
+   "prob": 0.785
+  },
+  {
+   "word": " voting",
+   "text": "voting",
+   "start": 25.41,
+   "end": 25.774,
+   "prob": 0.291
+  },
+  {
+   "word": " and",
+   "text": "and",
+   "start": 25.774,
+   "end": 25.888,
+   "prob": 0.584
+  },
+  {
+   "word": " fifteen",
+   "text": "fifteen",
+   "start": 25.889,
+   "end": 26.28,
+   "prob": 1.0
+  },
+  {
+   "word": " to",
+   "text": "to",
+   "start": 26.28,
+   "end": 26.4,
+   "prob": 1.0
+  },
+  {
+   "word": " twenty",
+   "text": "twenty",
+   "start": 26.4,
+   "end": 26.79,
+   "prob": 1.0
+  },
+  {
+   "word": " qualified",
+   "text": "qualified",
+   "start": 26.79,
+   "end": 27.33,
+   "prob": 1.0
+  },
+  {
+   "word": " source",
+   "text": "source",
+   "start": 27.33,
+   "end": 27.6,
+   "prob": 0.459
+  },
+  {
+   "word": " cause",
+   "text": "cause",
+   "start": 27.646,
+   "end": 28.02,
+   "prob": 0.81
+  },
+  {
+   "word": " lot",
+   "text": "lot",
+   "start": 28.32,
+   "end": 28.527,
+   "prob": 0.415
+  },
+  {
+   "word": " of",
+   "text": "of",
+   "start": 28.527,
+   "end": 28.606,
+   "prob": 0.927
+  },
+  {
+   "word": " money",
+   "text": "money",
+   "start": 28.86,
+   "end": 29.241,
+   "prob": 0.927
+  },
+  {
+   "word": " result",
+   "text": "result",
+   "start": 30.0,
+   "end": 30.3,
+   "prob": 0.638
+  },
+  {
+   "word": " is",
+   "text": "is",
+   "start": 30.3,
+   "end": 30.39,
+   "prob": 0.638
+  },
+  {
+   "word": " basis",
+   "text": "basis",
+   "start": 30.39,
+   "end": 30.96,
+   "prob": 0.453
+  },
+  {
+   "word": " with",
+   "text": "with",
+   "start": 31.165,
+   "end": 31.347,
+   "prob": 0.776
+  },
+  {
+   "word": " like",
+   "text": "like",
+   "start": 31.347,
+   "end": 31.621,
+   "prob": 1.0
+  },
+  {
+   "word": " a",
+   "text": "a",
+   "start": 31.621,
+   "end": 31.65,
+   "prob": 0.564
+  },
+  {
+   "word": " simple",
+   "text": "simple",
+   "start": 31.65,
+   "end": 32.04,
+   "prob": 0.842
+  },
+  {
+   "word": " i'm",
+   "text": "i'm",
+   "start": 32.88,
+   "end": 33.121,
+   "prob": 1.0
+  },
+  {
+   "word": " ready",
+   "text": "ready",
+   "start": 33.27,
+   "end": 33.51,
+   "prob": 0.762
+  },
+  {
+   "word": " to",
+   "text": "to",
+   "start": 33.51,
+   "end": 33.63,
+   "prob": 0.762
+  },
+  {
+   "word": " talk",
+   "text": "talk",
+   "start": 33.63,
+   "end": 33.96,
+   "prob": 0.762
+  },
+  {
+   "word": " what",
+   "text": "what",
+   "start": 34.83,
+   "end": 35.07,
+   "prob": 1.0
+  },
+  {
+   "word": " does",
+   "text": "does",
+   "start": 35.07,
+   "end": 35.221,
+   "prob": 0.853
+  },
+  {
+   "word": " this",
+   "text": "this",
+   "start": 35.221,
+   "end": 35.376,
+   "prob": 0.771
+  },
+  {
+   "word": " coach",
+   "text": "coach",
+   "start": 35.43,
+   "end": 35.7,
+   "prob": 0.352
+  },
+  {
+   "word": " my",
+   "text": "my",
+   "start": 35.713,
+   "end": 35.88,
+   "prob": 0.778
+  },
+  {
+   "word": " phone",
+   "text": "phone",
+   "start": 35.894,
+   "end": 36.114,
+   "prob": 0.926
+  },
+  {
+   "word": " calls",
+   "text": "calls",
+   "start": 36.478,
+   "end": 36.776,
+   "prob": 0.926
+  },
+  {
+   "word": " to",
+   "text": "to",
+   "start": 37.38,
+   "end": 37.47,
+   "prob": 0.983
+  },
+  {
+   "word": " started",
+   "text": "started",
+   "start": 37.47,
+   "end": 37.8,
+   "prob": 0.613
+  },
+  {
+   "word": " singing",
+   "text": "singing",
+   "start": 37.8,
+   "end": 38.07,
+   "prob": 0.328
+  }
+ ]
+}
