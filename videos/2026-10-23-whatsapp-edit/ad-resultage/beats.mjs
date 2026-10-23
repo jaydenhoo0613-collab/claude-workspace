@@ -1,6 +1,7 @@
 // Resultage ad: edit plan for engine.mjs. Phrases are looked up in assets/cut-asr.json (medium.en).
 // Uncertain hearings (owner to confirm): "rollercoaster", "One month involves less humans being clients",
 // "Resultage" spelling, "on a pay-up results basis", "4 calls a month".
+// d02 -> x1, c03 -> x2, c04 -> x3, d06 -> x4: custom scenes in custom.mjs
 export default ({ W, E, DUR }) => ({
   title: "Resultage ad v1",
 
@@ -18,10 +19,6 @@ export default ({ W, E, DUR }) => ({
     { id: "d01", s: 0, e: W("we are", 2),
       small: [[0, "You are a coach doing"]],
       big: { t: W("10K"), text: "10K A MONTH", enter: "count", count: { pre: "", to: 10, suf: "K A MONTH" } } },
-    // the problem, letter by letter
-    { id: "d02", s: W("so why"), e: W("one month"),
-      small: [[W("so why"), "so why does your calendar"], [W("look like"), "look like a"]],
-      big: { t: W("blue"), text: "ROLLERCOASTER?", enter: "letters" } },
     // the pain: red box
     { id: "d03", s: W("and it's always"), e: W("so", 2),
       small: [[W("and it's always"), "and it's always the"]],
@@ -34,11 +31,6 @@ export default ({ W, E, DUR }) => ({
     { id: "d05", s: W("on a pay-up"), e: W("with the right"),
       small: [[W("on a pay-up"), "on a"]],
       big: { t: W("results basis"), text: "RESULTS BASIS", kind: "green" } },
-    // proof
-    { id: "d06", s: W("and one business"), e: DUR,
-      small: [[W("and one business"), "one business coach went from"]],
-      big: { parts: [[W("4 calls"), "4 CALLS"], [W("17"), " → 17", { pre: " → ", to: 17, suf: "" }]] },
-      sub: [[W("a month", 3), "a month"]] },
   ],
 
   cards: [
@@ -48,11 +40,6 @@ export default ({ W, E, DUR }) => ({
     { id: "c02", type: "flow", s: W("where the chef"), e: W("and it's always"),
       nodes: [[W("chef"), "THE CHEF"], [W("takes the orders"), "TAKES THE ORDERS"], [W("answers the call"), "ANSWERS THE CALL"]],
       circleT: W("something"), notes: [[W("something"), "something has to give"]] },
-    { id: "c03", type: "name", s: W("so", 2), e: W("so", 3),
-      name: "JAYDEN", t: W("jayden"), role: [W("founder"), "founder of Resultage"] },
-    { id: "c04", type: "stat", s: W("and our one"), e: W("on a pay-up"),
-      small: "booking you", t: W("15"), to: 20, pre: "15-", suf: "",
-      subs: [[W("qualified"), "qualified sales calls"], [W("a month", 2), "a month"]] },
     { id: "c05", type: "bullets", s: W("with the right"), e: W("and one business"),
       items: [[W("with the right"), "RIGHT PEOPLE"], [W("with the right", 2), "RIGHT PROBLEM"], [W("ready to talk"), "READY TO TALK"]] },
   ],
